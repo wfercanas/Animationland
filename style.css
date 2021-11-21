@@ -10,6 +10,15 @@ body {
   display: grid;
   place-items: center;
   counter-reset: game;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1,
+p {
+  color: var(--darkbrown);
+  text-align: center;
+  margin: 1rem 0;
 }
 
 input {
@@ -22,6 +31,10 @@ input {
 
 input:checked {
   counter-increment: game;
+}
+
+p::after {
+  content: counter(game);
 }
 
 .phone {
@@ -50,21 +63,7 @@ input:checked {
   animation-iteration-count: infinite;
 }
 
-@keyframes jump {
-  0% {
-    bottom: 0;
-  }
-  25% {
-    bottom: -70px;
-  }
-  100% {
-    bottom: 0;
-  }
-}
-
-.layer-1 input[type='checkbox'] {
-}
-
+/* Bunny2 */
 .layer-2 {
   position: absolute;
   z-index: 2;
@@ -72,6 +71,11 @@ input:checked {
   width: 80px;
   bottom: 0;
   right: 60px;
+
+  animation-name: jump;
+  animation-duration: 800ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 .layer-3 {
@@ -88,6 +92,7 @@ input:checked {
   box-shadow: 2px 15px 20px 5px #00000033;
 }
 
+/* Bunny3 */
 .layer-4 {
   position: absolute;
   z-index: 4;
@@ -95,6 +100,11 @@ input:checked {
   width: 80px;
   bottom: 0;
   left: 35px;
+
+  animation-name: jump;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 .layer-5 {
@@ -109,6 +119,7 @@ input:checked {
   box-shadow: 2px 15px 20px 5px #00000033;
 }
 
+/* Bunny4 */
 .layer-6 {
   position: absolute;
   z-index: 6;
@@ -116,6 +127,11 @@ input:checked {
   width: 80px;
   bottom: 0;
   right: 25px;
+
+  animation-name: jump;
+  animation-duration: 900ms;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-iteration-count: infinite;
 }
 
 .layer-7 {
@@ -272,4 +288,18 @@ input:checked {
     linear-gradient(135deg, lightgreen 25%, transparent 25%) -10px 0,
     linear-gradient(45deg, var(--lightbrown) 25%, transparent 25%),
     linear-gradient(-45deg, var(--lightbrown) 25%, var(--darkbrown) 25%);
+}
+
+/* Animation for bunnies */
+
+@keyframes jump {
+  0% {
+    bottom: 0;
+  }
+  25% {
+    bottom: -70px;
+  }
+  100% {
+    bottom: 0;
+  }
 }
