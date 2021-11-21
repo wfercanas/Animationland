@@ -190,15 +190,32 @@ body {
   height: 4px;
   border-radius: 50%;
   background-color: black;
+  top: 15px;
+
+  animation-name: blink;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+  0% {
+    height: 4px;
+  }
+  5% {
+    transform: translateY(2px);
+    height: 1px;
+  }
+  10% {
+    transform: translateY(0px);
+    height: 4px;
+  }
 }
 
 .head__eye--left {
-  top: 15px;
   left: 22px;
 }
 
 .head__eye--right {
-  top: 15px;
   right: 22px;
 }
 
