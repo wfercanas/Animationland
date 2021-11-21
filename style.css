@@ -1,0 +1,224 @@
+:root {
+  --lightbrown: #d06224;
+  --darkbrown: #ae431e;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+
+.phone {
+  position: relative;
+  width: 300px;
+  height: 600px;
+  border: 8px solid black;
+  border-radius: 40px;
+  background-color: #ccefff;
+  box-shadow: 0 19px 38px #00000033, 0 15px 12px #00000023;
+  overflow: hidden;
+}
+
+.layer-1 {
+  position: absolute;
+  z-index: 1;
+  height: 450px;
+  width: 80px;
+  bottom: 0;
+  left: 60px;
+}
+
+.layer-2 {
+  position: absolute;
+  z-index: 2;
+  height: 450px;
+  width: 80px;
+  bottom: 0;
+  right: 60px;
+}
+
+.layer-3 {
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  width: 220px;
+  height: 400px;
+  background-color: var(--lightbrown);
+  border-radius: 20px 20px 0 0;
+  box-shadow: 2px 15px 20px 5px #00000033;
+}
+
+.layer-4 {
+  position: absolute;
+  z-index: 4;
+  height: 340px;
+  width: 80px;
+  bottom: 0;
+  left: 35px;
+}
+
+.layer-5 {
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  bottom: 0;
+  width: 200px;
+  height: 290px;
+  background-color: var(--lightbrown);
+  border-radius: 20px 20px 0 0;
+  box-shadow: 2px 15px 20px 5px #00000033;
+}
+
+.layer-6 {
+  position: absolute;
+  z-index: 6;
+  height: 210px;
+  width: 80px;
+  bottom: 0;
+  right: 25px;
+}
+
+.layer-7 {
+  position: absolute;
+  z-index: 7;
+  right: 0;
+  bottom: 0;
+  width: 160px;
+  height: 160px;
+  background-color: var(--lightbrown);
+  border-radius: 20px 20px 0 0;
+  box-shadow: 2px 15px 20px 5px #00000033;
+}
+
+.layer-8 {
+  position: absolute;
+  z-index: 8;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  bottom: 0;
+  width: 200px;
+  height: 90px;
+  background-color: lightgreen;
+  border-radius: 20px 20px 0 0;
+}
+
+.layer-9 {
+  position: absolute;
+  z-index: 9;
+  left: 0;
+  margin: 0 auto;
+  bottom: 0;
+  width: 100px;
+  height: 80px;
+  background-color: whitesmoke;
+  border-radius: 20px 20px 0 0;
+}
+
+.layer-10 {
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  margin: 0 auto;
+  bottom: 0;
+  width: 100px;
+  height: 80px;
+  background-color: whitesmoke;
+  border-radius: 20px 20px 0 0;
+}
+
+/* ----------------------------------- Bunny */
+.left-ear--outer {
+  position: absolute;
+  width: 20px;
+  height: 50px;
+  left: 10px;
+  background-color: white;
+  border-radius: 90%;
+}
+
+.left-ear--inner {
+  position: absolute;
+  width: 10px;
+  height: 50px;
+  left: 15px;
+  top: 8px;
+  background-color: pink;
+  border-radius: 90%;
+}
+
+.right-ear--outer {
+  position: absolute;
+  width: 20px;
+  height: 50px;
+  right: 10px;
+  background-color: white;
+  border-radius: 90%;
+}
+
+.right-ear--inner {
+  position: absolute;
+  width: 10px;
+  height: 50px;
+  right: 15px;
+  top: 8px;
+  background-color: pink;
+  border-radius: 90%;
+}
+
+.head {
+  position: absolute;
+  height: 70px;
+  width: 60px;
+  top: 25px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 80%;
+  background-color: white;
+}
+
+.head__eye {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.head__eye--left {
+  top: 15px;
+  left: 22px;
+}
+
+.head__eye--right {
+  top: 15px;
+  right: 22px;
+}
+
+/* ------------------------------------- Ground */
+.grass {
+  width: 100%;
+  height: 15px;
+  border-radius: 20px 20px 0 0;
+  background-color: lightgreen;
+}
+
+.pattern {
+  height: 20px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.square {
+  background: linear-gradient(-135deg, lightgreen 25%, transparent 25%) -10px 0,
+    linear-gradient(135deg, lightgreen 25%, transparent 25%) -10px 0,
+    linear-gradient(45deg, var(--lightbrown) 25%, transparent 25%),
+    linear-gradient(-45deg, var(--lightbrown) 25%, var(--darkbrown) 25%);
+}
