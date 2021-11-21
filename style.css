@@ -9,6 +9,19 @@ body {
   width: 100vw;
   display: grid;
   place-items: center;
+  counter-reset: game;
+}
+
+input {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+input:checked {
+  counter-increment: game;
 }
 
 .phone {
@@ -22,6 +35,7 @@ body {
   overflow: hidden;
 }
 
+/* Bunny1 */
 .layer-1 {
   position: absolute;
   z-index: 1;
@@ -29,6 +43,26 @@ body {
   width: 80px;
   bottom: 0;
   left: 60px;
+
+  animation-name: jump;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0;
+  }
+  25% {
+    bottom: -70px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+.layer-1 input[type='checkbox'] {
 }
 
 .layer-2 {
