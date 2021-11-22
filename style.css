@@ -153,10 +153,20 @@ p::after {
   left: 0;
   margin: 0 auto;
   bottom: 0;
-  width: 200px;
+  width: 80px;
   height: 90px;
-  background-color: lightgreen;
-  border-radius: 20px 20px 0 0;
+  background-color: lightgray;
+  border-radius: 50% 60% 0 0;
+}
+
+.layer-8::after {
+  position: absolute;
+  content: '';
+  bottom: -15px;
+  width: 130px;
+  height: 80px;
+  background-color: lightgray;
+  border-radius: 50% 75% 50% 0;
 }
 
 .layer-9 {
@@ -168,19 +178,40 @@ p::after {
   width: 100px;
   height: 80px;
   background-color: whitesmoke;
-  border-radius: 20px 20px 0 0;
+  border-radius: 50% 50% 0 0;
+}
+
+.layer-9::after {
+  position: absolute;
+  content: '';
+  bottom: -15px;
+  width: 130px;
+  height: 80px;
+  background-color: whitesmoke;
+  border-radius: 50% 75% 50% 0;
 }
 
 .layer-10 {
   position: absolute;
   z-index: 10;
-  right: 0;
+  right: -10px;
   margin: 0 auto;
   bottom: 0;
   width: 100px;
   height: 80px;
   background-color: whitesmoke;
-  border-radius: 20px 20px 0 0;
+  border-radius: 50% 50% 0 0;
+}
+
+.layer-10::after {
+  position: absolute;
+  content: '';
+  bottom: -35px;
+  right: 5px;
+  width: 130px;
+  height: 80px;
+  background-color: whitesmoke;
+  border-radius: 50% 0% 0% 50%;
 }
 
 /* ----------------------------------- Bunny */
