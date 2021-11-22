@@ -18,3 +18,7 @@ HTML & CSS
 ## Acknowledgements
 
 Thanks to [Estefany Aguilar](https://twitter.com/teffcode) for its course about CSS Animations in [Platzi](https://twitter.com/platzi)💚.
+
+
+## Notes
+I share some notes about the topics used in this project in this [Notion](https://wfercanas.notion.site/Curso-de-animaciones-con-CSS-5f3ff405ddf8426b99a2002edbd7f07c)
